@@ -1,0 +1,24 @@
+{
+    "users" : [
+  { "id": 1, "name": "Amit Sharma", "email": "amit.sharma@example.com", "status": "active", "joinedAt": "2024-01-15" },
+  { "id": 2, "name": "Priya Patel", "email": "priya.patel@example.com", "status": "inactive", "joinedAt": "2023-11-20" },
+  { "id": 3, "name": "Rahul Verma", "email": "rahul.verma@example.com", "status": "active", "joinedAt": "2024-03-05" },
+  { "id": 4, "name": "Sneha Iyer", "email": "sneha.iyer@example.com", "status": "inactive", "joinedAt": "2022-08-12" },
+  { "id": 5, "name": "Karan Mehta", "email": "karan.mehta@example.com", "status": "active", "joinedAt": "2025-02-28" },
+  { "id": 6, "name": "Neha Gupta", "email": "neha.gupta@example.com", "status": "active", "joinedAt": "2023-09-10" },
+  { "id": 7, "name": "Arjun Nair", "email": "arjun.nair@example.com", "status": "inactive", "joinedAt": "2022-12-01" },
+  { "id": 8, "name": "Pooja Singh", "email": "pooja.singh@example.com", "status": "active", "joinedAt": "2024-06-18" },
+  { "id": 9, "name": "Rohit Kulkarni", "email": "rohit.kulkarni@example.com", "status": "inactive", "joinedAt": "2023-04-22" },
+  { "id": 10, "name": "Anjali Desai", "email": "anjali.desai@example.com", "status": "active", "joinedAt": "2025-01-10" },
+  { "id": 11, "name": "Vikas Yadav", "email": "vikas.yadav@example.com", "status": "active", "joinedAt": "2023-07-30" },
+  { "id": 12, "name": "Meera Joshi", "email": "meera.joshi@example.com", "status": "inactive", "joinedAt": "2022-05-14" },
+  { "id": 13, "name": "Siddharth Jain", "email": "siddharth.jain@example.com", "status": "active", "joinedAt": "2024-02-11" },
+  { "id": 14, "name": "Kavya Reddy", "email": "kavya.reddy@example.com", "status": "inactive", "joinedAt": "2023-10-05" },
+  { "id": 15, "name": "Manish Tiwari", "email": "manish.tiwari@example.com", "status": "active", "joinedAt": "2024-08-19" },
+  { "id": 16, "name": "Divya Kapoor", "email": "divya.kapoor@example.com", "status": "inactive", "joinedAt": "2022-11-25" },
+  { "id": 17, "name": "Nikhil Agarwal", "email": "nikhil.agarwal@example.com", "status": "active", "joinedAt": "2025-03-02" },
+  { "id": 18, "name": "Ritu Chatterjee", "email": "ritu.chatterjee@example.com", "status": "inactive", "joinedAt": "2023-01-09" },
+  { "id": 19, "name": "Aditya Mishra", "email": "aditya.mishra@example.com", "status": "active", "joinedAt": "2024-05-27" },
+  { "id": 20, "name": "Shreya Banerjee", "email": "shreya.banerjee@example.com", "status": "active", "joinedAt": "2025-04-01" }
+]
+}
