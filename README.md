@@ -28,6 +28,4 @@ VI) Improvement if more time given :
 2)Code Optimization
 3)Styling & UI
 4)Testing
-
-Pagination, filtering, and sorting
-Better request validation
+5)Pagination
