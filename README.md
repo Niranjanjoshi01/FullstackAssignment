@@ -29,3 +29,5 @@ VI) Improvement if more time given :
 3)Styling & UI
 4)Testing
 5)Pagination
+
+npm install --save-dev typescript @types/node @types/express @types/cors
