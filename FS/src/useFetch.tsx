@@ -10,11 +10,14 @@ export type Users ={
 }
 
 export default function useFetch(url:string,status:string){
+
+    // console.log("Top URL ",url)
     const [users,setUsers] = useState<Users[]>([])
     const [loading,setLoading] = useState(false)
     const [error,setError] = useState("")
 
     const fetchUser = useCallback(async (value:string)=>{
+        // console.log("The URL",value )
         setLoading(true)
         try{
             const response = await fetch(value)
@@ -29,7 +32,11 @@ export default function useFetch(url:string,status:string){
             setLoading(false)
         }
         catch(errors : any){
-            setError(errors)
+            // console.log("error in catch block")
+            let a = errors.toString()
+            console.log(a)
+            setError(a)
+            
         }
         finally{
             setLoading(false)
@@ -38,7 +45,7 @@ export default function useFetch(url:string,status:string){
 
     useEffect(()=>{
         fetchUser(url)
-    },[status,fetchUser])
+    },[status,fetchUser])     //CAN ONLY BE DONE BY URL NO NEED FOR STATUS
 
-    return {users,loading,error,fetchUser}
+    return {users,loading,error,fetchUser,setError}
 }

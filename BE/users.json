@@ -19,6 +19,7 @@
   { "id": 17, "name": "Nikhil Agarwal", "email": "nikhil.agarwal@example.com", "status": "active", "joinedAt": "2025-03-02" },
   { "id": 18, "name": "Ritu Chatterjee", "email": "ritu.chatterjee@example.com", "status": "inactive", "joinedAt": "2023-01-09" },
   { "id": 19, "name": "Aditya Mishra", "email": "aditya.mishra@example.com", "status": "active", "joinedAt": "2024-05-27" },
-  { "id": 20, "name": "Shreya Banerjee", "email": "shreya.banerjee@example.com", "status": "active", "joinedAt": "2025-04-01" }
+  { "id": 20, "name": "Shreya Banerjee", "email": "shreya.banerjee@example.com", "status": "active", "joinedAt": "2025-04-01" },
+  { "id": 21, "name": "Shreya Banerjee", "email": "shreya.banerjee@example.com", "status": "active", "joinedAt": "2025-04-01" }
 ]
 }
