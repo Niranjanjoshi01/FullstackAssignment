@@ -12,7 +12,7 @@ let posts = require('./users.json')
 app.get('/getUsers',(req,res)=>{
     let filtered  = posts.users
     const queryKeys = Object.keys(req.query)
-
+    console.log("query keys",queryKeys)
     const param = req.query.status
 
     const Allowed_Status = ["Active","InActive"]
@@ -29,8 +29,8 @@ app.get('/getUsers',(req,res)=>{
 
         if(param && ! Allowed_Status.includes(param)){
             return res.status(400).json({
-                    error : "Invalid Status Value",
-                    allowed : Allowed_Status
+                    error : `Invalid query param value , Allowed values : ${Allowed_Status}`,
+                    // allowed : Allowed_Status
                 })
         }
 
