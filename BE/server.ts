@@ -31,18 +31,40 @@ export type TagSummary = {
     users:UserTagSummary[]
 }
 
-import postsData from "./users.json";
+//import postsData from "./users.json";
 
-const posts = postsData as UsersFile;
+//const posts = postsData as UsersFile;
 // const posts = null
 
 // console.log(posts)
+
+let posts;
+
+try {
+
+posts = require("./users.json");
+
+} catch (err) {
+
+console.error("Failed to load users.json", err);
+
+posts = null;
+
+}
 
 
 
 app.get("/getUsers", (req: Request, res: Response) => {
 
     try {
+
+        if (!posts || posts.users == undefined) { 
+            return res.status(400).json({ error: "Failed to Fetch Users",});
+
+        if (!posts || ! Array.isArray (posts.users)) { 
+            return res.status(500).json({ error: "Users data is not available or corrupted" });
+        }
+            
         let filtered: User[] = posts.users;
         // let filtered = null
 
@@ -94,6 +116,7 @@ app.get("/getUsers", (req: Request, res: Response) => {
     }
     catch(errors){
         console.log(errors)
+        res.status(400).json({error:"Users is null/undefined"})
     }
   
   
