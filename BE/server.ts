@@ -146,7 +146,7 @@ app.post(
             duration,
         };
 
-        res.status(400).json({error : 'anjsc'});
+        res.json(response);
     }
 );
 
