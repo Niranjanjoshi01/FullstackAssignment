@@ -15,7 +15,7 @@ function App() {
   const { users, loading, fetchUser, error, setError } = useFetch(url.current, status)
   const [searchInput, setSearchInput] = useState("")
   const [searchName, setSearchName] = useState("")
-  const filterUsers = useSearchByName(searchInput, users)
+  const filterUsers = useSearchByName(searchInput, users,setError)
   const [sortConfig, setSortConfig] = useState({ id: "", order: "asc" })
   const sortedUsers = useSort(filterUsers, sortConfig)
   const [postData, setPostData] = useState("")
@@ -91,7 +91,7 @@ function App() {
            <button className="btn btn-secondary" onClick={() => { setIsClicked((prev) => !prev) }}>Filter</button>
           {isClicked ? <div style={{ position: "absolute", backgroundColor: "white" }}>
             <p>Filter by Status...</p>
-            <button className="btn btn-info m-1" onClick={() => { url.current = baseUrl + "?status=Active"; setStatus("Active"); setIsClicked(false) }}>Active</button>
+            <button className="btn btn-info m-1" onClick={() => { url.current = baseUrl + "?tatus=Active"; setStatus("Active"); setIsClicked(false) }}>Active</button>
             <button className="btn btn-info m-1" onClick={() => { url.current = baseUrl + "?status=InActive"; setStatus("InActive"); setIsClicked(false) }}>InActive</button>
           </div> : <div></div>}
         </div>
@@ -113,7 +113,7 @@ function App() {
 
             <tbody>
 
-              {sortedUsers.length == 0 ? <p>No Data Found</p> :
+              {sortedUsers == null || sortedUsers == undefined || sortedUsers.length == 0 ? <p>No Data Found</p> :
               sortedUsers?.map((value) => (
                 <tr key={value.id}>
                   <td>{value.id}</td>
