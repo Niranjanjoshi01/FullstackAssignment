@@ -76,7 +76,7 @@ function App() {
       {error ? <div style={{ position: "absolute", top: 0, right: 0 }}><Alert variant="danger" >
 
         <Alert.Heading>{error}</Alert.Heading>
-        {/* <p>Error message goes here.</p> */}
+        {/* <p>Error : {error}</p> */}
       </Alert></div> : <></>}
 
 
